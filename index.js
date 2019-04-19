@@ -22,7 +22,7 @@ app.use(cors());
 app.use(bodyparser.json());
 //app.set('views', path.join(__dirname, 'views'));
 //app.set('view engine', 'jade');
-app.use(express.static(path.join(__dirname, '../client/dist/client')));
+app.use(express.static('../client/dist/client'));
 // passport config
 app.use(session({
     secret: 'foo',
